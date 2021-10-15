@@ -31,7 +31,7 @@ module.exports = {
     plugins: [
         new HtmlWebpackPlugin({
             inject: false,
-            title: 'zgzig'
+            title: '{{ cookiecutter.project_name }}'
         }),
         new MiniCssExtractPlugin({
             filename: "./css/[name].[contenthash].css",
