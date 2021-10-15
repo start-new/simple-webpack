@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title><%= htmlWebpackPlugin.options.title %></title><% 
+    if (htmlWebpackPlugin.files.favicon) { %>
+    <link rel="shortcut icon" href="<%= htmlWebpackPlugin.files.favicon%>">
+    <% } %><% 
+    for (const tag of htmlWebpackPlugin.tags.headTags) { %>
+    <%= tag %><%
+    } %>
+</head>
+<body><% 
+    for (const tag of htmlWebpackPlugin.tags.bodyTags) { %>
+    <%= tag %><%
+    } %>
+</body>
+</html>
