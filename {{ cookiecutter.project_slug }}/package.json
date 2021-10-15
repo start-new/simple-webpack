@@ -3,6 +3,7 @@
   "version": "{{ cookiecutter.project_version }}",
   "description": "{{ cookiecutter.project_description }}",
   "author": "{{ cookiecutter.project_author }}",
+  "license": "{{ cookiecutter.license }}",
   "scripts": {
     "dev": "webpack --node-env development",
     "build": "webpack --node-env production"
